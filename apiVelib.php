@@ -28,6 +28,8 @@ $station16001 = getOneVelibStationFromBDD($bdd, 16001);
 $station16103 = getOneVelibStationFromBDD($bdd, 16103);
 $station17033 = getOneVelibStationFromBDD($bdd, 17033);
 
+$stationArray = getAllVelibStationFromBDD($bdd);
+
 //FONCTIONS
 /*
     Récupération de tous les codes stations de Vélib
@@ -63,7 +65,7 @@ function getOneVelibStationFromBDD($pdo, $codeStation){
     Récupération de toutes les stations vélib avec les données de disponnibilités
     @pdo object : variable où l'on a initialisé la base de données
 */
-function getAllVelibStationFromBDD($pdo, $codeStation){
+function getAllVelibStationFromBDD($pdo){
     $requete = "SELECT `code_station`, `nom_station`, `ouvert_dispo`, `evelo_dispo`, `velo_dispo`, `total_dispo`, `capacite_dispo`
     FROM `stations`
     RIGHT JOIN `dispo` ON `stations`.`code_station` = `dispo`.`codeStation_dispo`;";
