@@ -20,13 +20,13 @@ foreach ($allCodeVelibStation as $codeVelibStation) {
     setVelibData($bdd, $codeVelibStation, $data);
 }
 //Récupération de la donnée
-$station8003 = getOneVelibStationFromBDD($bdd, 8003);
-$station8028 = getOneVelibStationFromBDD($bdd, 8028);
-$station8056 = getOneVelibStationFromBDD($bdd, 8056);
-$station8057 = getOneVelibStationFromBDD($bdd, 8057);
-$station16001 = getOneVelibStationFromBDD($bdd, 16001);
-$station16103 = getOneVelibStationFromBDD($bdd, 16103);
-$station17033 = getOneVelibStationFromBDD($bdd, 17033);
+// $station8003 = getOneVelibStationFromBDD($bdd, 8003);
+// $station8028 = getOneVelibStationFromBDD($bdd, 8028);
+// $station8056 = getOneVelibStationFromBDD($bdd, 8056);
+// $station8057 = getOneVelibStationFromBDD($bdd, 8057);
+// $station16001 = getOneVelibStationFromBDD($bdd, 16001);
+// $station16103 = getOneVelibStationFromBDD($bdd, 16103);
+// $station17033 = getOneVelibStationFromBDD($bdd, 17033);
 
 $stationArray = getAllVelibStationFromBDD($bdd);
 
